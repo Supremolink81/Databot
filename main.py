@@ -18,4 +18,4 @@ import binomial.binomial_commands
 async def on_ready():
     print(f"Logged in as {bot}")
             
-bot.run("OTc4ODI1MTY1MDgzMzgxNzYw.G0TEW5.ZYy0nU4kaDq3448q1bCJruR2IMQC1E0mx4DRiU")
+bot.run("TOKEN")
