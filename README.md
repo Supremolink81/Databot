@@ -17,9 +17,11 @@ Using the Seaborn library in Python, Databot is able to create beautiful visuali
 
 - heatmaps
 
-- scatterplots
+![image](https://user-images.githubusercontent.com/55766890/193429488-537309b6-e504-4345-aee0-4a4d594b70b8.png)
 
 - regression models
+
+![image](https://user-images.githubusercontent.com/55766890/193429164-a513afea-d2b9-4a7a-8132-e2e82145d39e.png)
 
 and more!
 
