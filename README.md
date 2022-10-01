@@ -1,8 +1,8 @@
 # Databot
-A Dicord bot written in Python with several different features.
+A Discord bot written in Python with several different features.
 
 # Data Analysis
-Databot contains various commands for many types of data analysis, including:
+Databot contains various commands for analysis of many types of data, including:
 
 - binomial data
 
@@ -24,5 +24,3 @@ Using the Seaborn library in Python, Databot is able to create beautiful visuali
 ![image](https://user-images.githubusercontent.com/55766890/193429164-a513afea-d2b9-4a7a-8132-e2e82145d39e.png)
 
 and more!
-
-# Gallery
