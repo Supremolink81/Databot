@@ -9,16 +9,29 @@ def make_df(items1,lab1,items2=None,lab2=None):
 
 #CSV
 def make_df_file(ctx):
+    """
+    Creates a dataframe from a csv or xsls file.
+    """
+
     attachments = ctx.message.attachments
+
+    # No attached files
     if len(attachments) == 0:
         raise RuntimeError
+    
     file = attachments[0].url
+
+    # Not csv or xsls file
     if not file.endswith("csv") and not file.endswith("xsls"):
         raise RuntimeError
+    
     s = requests.get(file).text
     return pd.read_csv(StringIO(s))
 
 def HELP():
+    """
+    String with descriptions of each command.
+    """
     return ("""COMMANDS:
 
     FILE

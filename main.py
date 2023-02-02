@@ -13,9 +13,20 @@ import generic.generic_commands
 import combinatorics.combinatorics_commands
 import binomial.binomial_commands
 
-#Events
+"""
+A Discord bot written using Discord.py to perform statistics and data analysis.
+
+The bot is capable of many functions, including:
+
+-plotting and analysis of quantitative data
+
+-plotting and analysis of categorical data
+
+-combinatorics and binomial calculations
+"""
+
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot}")
             
-bot.run("OTc4ODI1MTY1MDgzMzgxNzYw.G0TEW5.ZYy0nU4kaDq3448q1bCJruR2IMQC1E0mx4DRiU")
+bot.run("TOKEN")
