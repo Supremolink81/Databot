@@ -29,4 +29,4 @@ The bot is capable of many functions, including:
 async def on_ready():
     print(f"Logged in as {bot}")
             
-bot.run("OTc4ODI1MTY1MDgzMzgxNzYw.GLkSdU.0TvmCuxtHB4gc1U_3qh46ZbyyhB0daexcROzpE")
+bot.run("TOKEN")
