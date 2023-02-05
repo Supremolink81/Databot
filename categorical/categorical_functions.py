@@ -57,4 +57,33 @@ async def plot_categorical_data(lst : list, ctx):
     """
     Plots a one-variable categorical dataset.
     """
-    pass
+    try:
+
+        # Plot information
+        await ctx.send("Enter Title:")
+        title = await bot.wait_for("message", check = lambda m : m.author == ctx.author, timeout = 30)
+        await ctx.send("Enter plotting method: piechart or countplot")
+        method = await bot.wait_for("message", check = lambda m : m.author == ctx.author, timeout = 30)
+
+        plt.title(title.content)
+
+        # Count plot
+        if method == "countplot":
+            plot = sns.countplot(lst)
+            fig = plot.get_figure()
+            fig.savefig("graph.png")
+
+        # Pie chart
+        elif method == "piechart":
+            plt.pie(lst, labels = set(lst), colors = sns.color_palette('bright')[:len(set(lst))], autopct = "%.2f%%")
+            plt.savefig("graph.png")
+
+        await ctx.send(file = discord.File("graph.png"))
+
+    # User took too long to respond
+    except asyncio.TimeoutError:
+        await ctx.send("Sorry, you took too long to give an input!")
+
+    # Invalid plotting method
+    except RuntimeError:
+        await ctx.send("Invalid method entered!")

@@ -220,11 +220,11 @@ async def plot_quantitative_data_2(lstX : list, lstY : list, ctx):
         await ctx.send("Enter color as a hexadecimal code (e.g. #706C5C):")
         col = await bot.wait_for("message", check = color_check, timeout = 30)
         df = make_df(lstX, "X-Axis", lstY, "Y-Axis")
-        await ctx.send("Enter plotting method: linear model, scatterplot, or heatmap")
+        await ctx.send("Enter plotting method: linearmodel, scatterplot, or heatmap")
         method = await bot.wait_for("message", check = lambda m : m.author == ctx.author, timeout = 30)
 
         # Linear regression model
-        if method.content == "linear model":
+        if method.content == "linearmodel":
             plot = sns.regplot(data = df, x = "X-Axis", y = "Y-Axis", color = col.content)
 
         # Scatterplot
