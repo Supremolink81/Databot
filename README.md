@@ -1,5 +1,8 @@
 # Databot
-A Discord bot written in Python with several different features. Designed using Discord's Python API 
+A Discord bot written in Python with several different features. 
+
+Designed using Discord's Python API to receive data from users (in the form of files or raw data), 
+then output results based on what command the user executed.
 
 # Data Analysis
 Databot contains various commands for analysis of many types of data, including:
