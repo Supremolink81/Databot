@@ -28,6 +28,6 @@ Using the Seaborn library in Python, Databot is able to create beautiful visuali
 
 ![image](https://user-images.githubusercontent.com/55766890/193429164-a513afea-d2b9-4a7a-8132-e2e82145d39e.png)
 
-Visualization is done through Matplotlib and Seaborn.
-
 and more!
+
+Visualization is done through Matplotlib and Seaborn.
